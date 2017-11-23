@@ -8,27 +8,36 @@
   <div class="keys">
     <div data-key="65" class="key">
       <kbd>A</kbd>
-
-
-
-
-
+    <div data-key="83" class="key">
+      <kbd>S</kbd>
+    <div data-key="68" class="key">
+      <kbd>D</kbd>
+    <div data-key="70" class="key"> 
+      <kbd>F</kbd> 
+    <div data-key="71" class="key">
+      <kbd>G</kbd>
+    <div data-key="72" class="key">
+      <kbd>H</kbd>
+    <div data-key="74" class="key">
+      <kbd>J</kbd>
+    <div data-key="75" class="key">
+      <kbd>K</kbd>
+    <div data-key="76" class="key">
+      <kbd>L</kbd>
   </div>
 
-
-
-  <p>test</p>
 <audio data-key="65" src="./sounds/Kicks/Hard_kick_1.WAV"> </audio>
+<audio data-key="83" src="./sounds/Toms/N-Tom1.WAV"> </audio>
+<audio data-key="68" src="./sounds/Toms/SyhTom01.WAV"> </audio>
+<audio data-key="70" src="./sounds/Toms/SynthTom01.WAV"> </audio>
+<audio data-key="71" src="./sounds/Snares/Snare_1.WAV"> </audio>
+<audio data-key="72" src="./sounds/Hihats/Hihat_10_closed.WAV"> </audio>
+<audio data-key="74" src="./sounds/Hihats/Hihat_open_1.WAV"> </audio>
+<audio data-key="75" src="./sounds/Crash/Crash_1.WAV"> </audio>
+<audio data-key="76" src="./sounds/Rise and Falls/Rise_FX5.WAV"> </audio>
 
 
-<script>
-  //plays audio from pressing certain key
-  window.addEventListener('keydown', function(e){
-    const audio = document.querySelector(`audio[data-key="${e.keyCode}" ]`);
-    if(!audio) return; // stop the function from running
-    audio.play();
-  });
-</script>
+<script type="text/javascript" src="./main.js"></script>
 </body>
 </html>
 
