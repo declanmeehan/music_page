@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>keyboard instruments</title>
+</head>
+<body>
+  <div class="keys">
+    <div data-key="65" class="key">
+      <kbd>A</kbd>
+
+
+
+
+
+  </div>
+
+
+
+  <p>test</p>
+<audio data-key="65" src="./sounds/Kicks/Hard_kick_1.WAV"> </audio>
+
+
+<script>
+  //plays audio from pressing certain key
+  window.addEventListener('keydown', function(e){
+    const audio = document.querySelector(`audio[data-key="${e.keyCode}" ]`);
+    if(!audio) return; // stop the function from running
+    audio.play();
+  });
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
