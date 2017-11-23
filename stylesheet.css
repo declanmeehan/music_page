@@ -3,10 +3,43 @@ html {
 }
 
 
-#background {
-  position: fixed;
-  width: 10px;
-  height: 10px;
-  background-repeat: no-repeat;
-  background-attachment: fixed; 
+#background-container {
+  position: relative;
+
+}
+
+#background-image {
+  position: absolute;
+}
+
+#key-container {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  display: inline-block;
+
+  z-index: 1;
+}
+
+#keys_row_1 {
+  width: 90%;
+  padding: 1em;
+  margin-left: 5%;
+  height:100%;
+}
+
+key {
+  padding: 1em;
+  margin: 1em;
+}
+
+kbd {
+  width: 5em;
+  height: 5em;
+  padding: 1em;
+   display: inline-block;
+}
+
+#key-container {
+  width: 100%;
 }
